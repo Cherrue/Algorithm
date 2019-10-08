@@ -10,7 +10,7 @@
 */
 #include<iostream>
 #include<queue> // STL(Standard Template Library)
-using namespace std; // STLï¿½ï¿½ std namespaceï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+using namespace std; // STLÀÌ std namespace¿¡¼­ ¸¸µé¾îÁü
 
 int g_oil_deposit_count = 0;
 void BFS(char** data, int **check, int size_x, int size_y, int x, int y) {
@@ -120,6 +120,7 @@ int main4677() {
 0 0
 ************************************************
 * TEST OUTPUT
+************************************************
 0
 1
 2
