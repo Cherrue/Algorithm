@@ -132,7 +132,7 @@ void normal_DFS(char** arr, bool** visited, int x, int y, int size) {
 	normal_DFS(arr, visited, x + 1, y, size);
 	normal_DFS(arr, visited, x, y + 1, size);
 }
-int main() {
+int main5011() {
 	int size;
 	cin >> size;
 	char** grid = new char* [size];
