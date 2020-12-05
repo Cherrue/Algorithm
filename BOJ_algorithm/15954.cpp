@@ -1,62 +1,68 @@
 /************************************************
- * @TITLE : ÀÎÇüµé
+ * @TITLE : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * @DATE : 2019-10-10
  * @NUMBER : 15954
  * @URL : https://www.acmicpc.net/problem/15954
  * @CATEGORY : 
  * @TIME : 1sec
  * @MEMORY : 512MB
- * @source : Ä«Ä«¿À ÄÚµå Æä½ºÆ¼¹ú 2018 ¿¹¼±
- * @caution : ¹®Á¦ÀÇ K°³ ÀÌ»ó!! À» È®ÀÎÇÏ¶ó
+ * @source : Ä«Ä«ï¿½ï¿½ ï¿½Úµï¿½ ï¿½ä½ºÆ¼ï¿½ï¿½ 2018 ï¿½ï¿½ï¿½ï¿½
+ * @caution : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Kï¿½ï¿½ ï¿½Ì»ï¿½!! ï¿½ï¿½ È®ï¿½ï¿½ï¿½Ï¶ï¿½
  ************************************************
 */
-#include<iostream>
-#include<math.h>
-#include<algorithm>
-#include<limits>
+#include <iostream>
+#include <math.h>
+#include <algorithm>
+#include <limits>
 using namespace std;
-double average(int* arr, int start, int end) {
+double average(int *arr, int start, int end)
+{
 	double sum = 0.0f;
-	for (int i = start; i < end; i++) {
+	for (int i = start; i < end; i++)
+	{
 		sum += arr[i];
 	}
 	return sum / (end - start);
 }
-double standardDeviation(int* arr, int start, int end) {
+double standardDeviation(int *arr, int start, int end)
+{
 	double dev = 0.0f;
 	double mean = average(arr, start, end);
 
-	for (int i = start; i < end; i++) {
+	for (int i = start; i < end; i++)
+	{
 		dev += pow(arr[i] - mean, 2);
 	}
 	return sqrt(dev / (end - start));
 }
-int main() {
+int main()
+{
 	cout.precision(12);
 
 	int N, K;
-	int* arr_preferences;
+	int *arr_preferences;
 	cin >> N >> K;
 	arr_preferences = new int[N];
 
-	for (int i = 0; i < N; i++) {
+	for (int i = 0; i < N; i++)
+	{
 		cin >> arr_preferences[i];
 	}
 
-
 	double smallest_stddev = numeric_limits<double>::max();
-	for (int i = 0; i <= N - K; i++) {
-		for (int j = 0; j<=N-K-i ; j++) {
+	for (int i = 0; i <= N - K; i++)
+	{
+		for (int j = 0; j <= N - K - i; j++)
+		{
 			float now_stddev = standardDeviation(arr_preferences, i, i + K + j);
 			if (smallest_stddev > now_stddev)
 				smallest_stddev = now_stddev;
-
 		}
 	}
 
 	cout << smallest_stddev;
 
-	delete []arr_preferences;
+	delete[] arr_preferences;
 	return 0;
 }
 /*
