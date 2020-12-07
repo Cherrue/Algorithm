@@ -1,5 +1,6 @@
 /************************************************
  * @TITLE : 체스판 다시 칠하기
+ * @LEVEL : Silver 5
  * @DATE : 2020-12-05
  * @NUMBER : 1018
  * @URL : https://www.acmicpc.net/problem/1018
