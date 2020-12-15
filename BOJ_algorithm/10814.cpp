@@ -6,7 +6,7 @@
  * @URL : https://www.acmicpc.net/problem/10814
  * @TIME : 3sec
  * @MEMORY : 256MB
- * @TIME : 00:00 ~ 
+ * @TIME : 00:00 ~ 00:13
  ************************************************
 */
 #include <iostream>
