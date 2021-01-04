@@ -3,13 +3,13 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "C/C++: g++ build active file2",
+			"label": "C/C++: g++ build active file",
 			"command": "/usr/bin/g++",
 			"args": [
 				"-g",
 				"${file}",
 				"-o",
-				"${workspaceFolder}/compiled/${fileBasenameNoExtension}"
+				"${workspaceFolder}/compiled/${fileBasenameNoExtension}",
 			],
 			"options": {
 				"cwd": "/usr/bin"
