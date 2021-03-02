@@ -4,6 +4,12 @@
         "string": "cpp",
         "ios": "cpp",
         "ratio": "cpp",
-        "bitset": "cpp"
+        "bitset": "cpp",
+        "map": "cpp",
+        "utility": "cpp",
+        "vector": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "deque": "cpp"
     }
 }
